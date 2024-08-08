@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MenuItemsView: View {
 	let foods: [MenuItem] = MockData.foods
+	let drinks: [MenuItem] = MockData.drinks
+	let desserts: [MenuItem] = MockData.desserts
+
 	var body: some View {
 		let columns = [
 			GridItem(.flexible()),
@@ -20,18 +23,29 @@ struct MenuItemsView: View {
 				Section {
 					LazyVGrid(columns: columns) {
 						ForEach(foods) { food in
-							GridRow {
-								VStack {
-									Rectangle()
-										.frame(width: 100, height: 90)
-										.foregroundStyle(Color.pink)
-									Text(food.name)
-								}
-							}
+							MenuItemGridRowView(name: food.name)
 						}
 					}
 				} header: {
 					HeaderView(type: "Foods")
+				}
+				Section {
+					LazyVGrid(columns: columns) {
+						ForEach(drinks) { drink in
+							MenuItemGridRowView(name: drink.name)
+						}
+					}
+				} header: {
+					HeaderView(type: "Drinks")
+				}
+				Section {
+					LazyVGrid(columns: columns) {
+						ForEach(desserts) { dessert in
+							MenuItemGridRowView(name: dessert.name)
+						}
+					}
+				} header: {
+					HeaderView(type: "Desserts")
 				}
 			}
 			.navigationTitle("Menu")
@@ -40,5 +54,5 @@ struct MenuItemsView: View {
 }
 
 #Preview {
-    MenuItemsView()
+	MenuItemsView()
 }

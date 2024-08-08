@@ -13,6 +13,7 @@
 		279112CB2C64346B00AE1B87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112CA2C64346B00AE1B87 /* Preview Assets.xcassets */; };
 		279112D32C64E93E00AE1B87 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112D22C64E93E00AE1B87 /* MenuItem.swift */; };
 		279112D52C64F9D600AE1B87 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112D42C64F9D600AE1B87 /* HeaderView.swift */; };
+		279112D92C658DFA00AE1B87 /* MenuItemGridRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112D82C658DFA00AE1B87 /* MenuItemGridRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		279112CA2C64346B00AE1B87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		279112D22C64E93E00AE1B87 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		279112D42C64F9D600AE1B87 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		279112D82C658DFA00AE1B87 /* MenuItemGridRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGridRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				279112C72C64346B00AE1B87 /* Assets.xcassets */,
 				279112C92C64346B00AE1B87 /* Preview Content */,
 				279112D42C64F9D600AE1B87 /* HeaderView.swift */,
+				279112D82C658DFA00AE1B87 /* MenuItemGridRowView.swift */,
 			);
 			path = LittleLemonDiner;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279112D92C658DFA00AE1B87 /* MenuItemGridRowView.swift in Sources */,
 				279112D32C64E93E00AE1B87 /* MenuItem.swift in Sources */,
 				279112C62C64346900AE1B87 /* MenuItemsView.swift in Sources */,
 				279112C42C64346900AE1B87 /* LittleLemonDinerApp.swift in Sources */,
