@@ -15,23 +15,26 @@ struct MenuItemsView: View {
 			GridItem(.flexible()),
 			GridItem(.flexible())
 		]
-		ScrollView {
-			Section {
-				LazyVGrid(columns: columns) {
-					ForEach(foods) { food in
-						GridRow {
-							VStack {
-								Rectangle()
-									.frame(width: 100, height: 90)
-									.foregroundStyle(Color.pink)
-								Text(food.name)
+		NavigationStack {
+			ScrollView {
+				Section {
+					LazyVGrid(columns: columns) {
+						ForEach(foods) { food in
+							GridRow {
+								VStack {
+									Rectangle()
+										.frame(width: 100, height: 90)
+										.foregroundStyle(Color.pink)
+									Text(food.name)
+								}
 							}
 						}
 					}
+				} header: {
+					HeaderView(type: "Foods")
 				}
-			} header: {
-				HeaderView(type: "Foods")
 			}
+			.navigationTitle("Menu")
 		}
 	}
 }
