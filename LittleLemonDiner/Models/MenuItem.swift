@@ -7,10 +7,12 @@
 
 import Foundation
 
-struct MenuItem {
+struct MenuItem: Identifiable {
 	let name: String
 	let type: MenuCategory
 	let price: Double
+
+	let id = UUID()
 }
 
 enum MenuCategory: String, CaseIterable {

@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		279112C42C64346900AE1B87 /* LittleLemonDinerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112C32C64346900AE1B87 /* LittleLemonDinerApp.swift */; };
-		279112C62C64346900AE1B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112C52C64346900AE1B87 /* ContentView.swift */; };
+		279112C62C64346900AE1B87 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112C52C64346900AE1B87 /* MenuItemsView.swift */; };
 		279112C82C64346B00AE1B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112C72C64346B00AE1B87 /* Assets.xcassets */; };
 		279112CB2C64346B00AE1B87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279112CA2C64346B00AE1B87 /* Preview Assets.xcassets */; };
+		279112D32C64E93E00AE1B87 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279112D22C64E93E00AE1B87 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		279112C02C64346900AE1B87 /* LittleLemonDiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemonDiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279112C32C64346900AE1B87 /* LittleLemonDinerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonDinerApp.swift; sourceTree = "<group>"; };
-		279112C52C64346900AE1B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		279112C52C64346900AE1B87 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
 		279112C72C64346B00AE1B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279112CA2C64346B00AE1B87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		279112D22C64E93E00AE1B87 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		279112C22C64346900AE1B87 /* LittleLemonDiner */ = {
 			isa = PBXGroup;
 			children = (
+				279112D12C64E8F500AE1B87 /* Models */,
 				279112C32C64346900AE1B87 /* LittleLemonDinerApp.swift */,
-				279112C52C64346900AE1B87 /* ContentView.swift */,
+				279112C52C64346900AE1B87 /* MenuItemsView.swift */,
 				279112C72C64346B00AE1B87 /* Assets.xcassets */,
 				279112C92C64346B00AE1B87 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				279112CA2C64346B00AE1B87 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		279112D12C64E8F500AE1B87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				279112D22C64E93E00AE1B87 /* MenuItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279112C62C64346900AE1B87 /* ContentView.swift in Sources */,
+				279112D32C64E93E00AE1B87 /* MenuItem.swift in Sources */,
+				279112C62C64346900AE1B87 /* MenuItemsView.swift in Sources */,
 				279112C42C64346900AE1B87 /* LittleLemonDinerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
