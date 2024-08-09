@@ -11,6 +11,7 @@ struct MenuItemsView: View {
 	let foods: [MenuItem] = MockData.foods
 	let drinks: [MenuItem] = MockData.drinks
 	let desserts: [MenuItem] = MockData.desserts
+	@State private var isShowingFilters: Bool = false
 
 	var body: some View {
 		let columns = [
@@ -49,6 +50,21 @@ struct MenuItemsView: View {
 				}
 			}
 			.navigationTitle("Menu")
+			.toolbar {
+				ToolbarItem(placement: .topBarTrailing) {
+					Button {
+						print("Filter button tapped")
+						isShowingFilters.toggle()
+					} label: {
+						Image(systemName: "slider.horizontal.3")
+							.resizable()
+					}
+				}
+			}
+			.tint(.purple)
+		}
+		.sheet(isPresented: $isShowingFilters) {
+			MenultemsOptionView()
 		}
 	}
 }

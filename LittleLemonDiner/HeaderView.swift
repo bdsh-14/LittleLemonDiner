@@ -13,7 +13,7 @@ struct HeaderView: View {
 		HStack {
 			Text(type)
 				.font(.title)
-				.padding(.leading)
+				.padding([.leading, .top])
 			Spacer()
 		}
     }
