@@ -17,6 +17,7 @@ struct MenuItemGridRowView: View {
 					.frame(width: 100, height: 90)
 					.foregroundStyle(Color.pink)
 				Text(name)
+					.foregroundStyle(Color.black)
 			}
 		}
     }

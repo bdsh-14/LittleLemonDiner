@@ -24,7 +24,9 @@ struct MenuItemsView: View {
 				Section {
 					LazyVGrid(columns: columns) {
 						ForEach(foods) { food in
-							MenuItemGridRowView(name: food.name)
+							NavigationLink(destination: MenuItemDetailsView(name: food.name)) {
+								MenuItemGridRowView(name: food.name)
+							}
 						}
 					}
 				} header: {
@@ -33,7 +35,9 @@ struct MenuItemsView: View {
 				Section {
 					LazyVGrid(columns: columns) {
 						ForEach(drinks) { drink in
-							MenuItemGridRowView(name: drink.name)
+							NavigationLink(destination: MenuItemDetailsView(name: drink.name)) {
+								MenuItemGridRowView(name: drink.name)
+							}
 						}
 					}
 				} header: {
@@ -42,12 +46,15 @@ struct MenuItemsView: View {
 				Section {
 					LazyVGrid(columns: columns) {
 						ForEach(desserts) { dessert in
-							MenuItemGridRowView(name: dessert.name)
+							NavigationLink(destination: MenuItemDetailsView(name: dessert.name)) {
+								MenuItemGridRowView(name: dessert.name)
+							}
 						}
 					}
 				} header: {
 					HeaderView(type: "Desserts")
 				}
+
 			}
 			.navigationTitle("Menu")
 			.toolbar {
@@ -61,7 +68,6 @@ struct MenuItemsView: View {
 					}
 				}
 			}
-			.tint(.purple)
 		}
 		.sheet(isPresented: $isShowingFilters) {
 			MenultemsOptionView()
