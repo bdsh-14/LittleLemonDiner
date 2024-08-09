@@ -21,6 +21,12 @@ enum MenuCategory: String, CaseIterable {
 	case dessert
 }
 
+enum SortByCategory: String, CaseIterable {
+	case mostPopular = "Most popular"
+	case price = "Price $-$$$"
+	case a_to_z = "A-Z"
+}
+
 struct MockData {
 	static let foods: [MenuItem] = {
 		var items: [MenuItem] = []
