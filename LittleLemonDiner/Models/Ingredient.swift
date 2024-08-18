@@ -1,10 +1,3 @@
-//
-//  Ingredient.swift
-//  LittleLemonDiner
-//
-//  Created by Bidisha Biswas on 8/8/24.
-//
-
 import Foundation
 
 enum Ingredient: String, CaseIterable {

@@ -1,10 +1,3 @@
-//
-//  HeaderView.swift
-//  LittleLemonDiner
-//
-//  Created by Bidisha Biswas on 8/8/24.
-//
-
 import SwiftUI
 
 struct HeaderView: View {

@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  LittleLemonDiner
-//
-//  Created by Bidisha Biswas on 8/7/24.
-//
-
 import SwiftUI
 
 struct MenuItemsView: View {
